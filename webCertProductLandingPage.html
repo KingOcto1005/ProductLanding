@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<head>
+
+    <title>
+        Product Landing Page
+    </title>
+
+    <style>
+
+        body {
+
+            
+            background-color: rgb(100,58,120);
+        }
+        
+        h1, h2, p, label, h3, figcaption {
+
+            color: lime;
+        }
+
+        p:hover {
+
+            font-size: 25px;
+        }
+
+        @media (max-width: 800px) {
+
+            h1, p, label {
+
+                color: orange;
+            }
+        }
+
+        #header-img {
+            max-width: 15%;
+            height: auto;
+            margin-left: 43%;
+            
+        }
+
+
+        nav {
+
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: crimson;
+
+        }
+
+
+        #nav-items {
+
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        header {
+
+            background-color: grey;
+            width: 100%;
+            margin: 0;
+        }
+
+        ul {
+
+
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+            
+
+        }
+
+        a {
+
+            color: darkgray;
+        }
+
+        a:visited {
+            
+            color: navy;
+        }
+
+
+        #product-video {
+
+            display: flex;
+            justify-content: center;
+        }
+
+        iframe {
+
+            width: 50%;
+            height: 250px;
+
+        }
+
+        #vid {
+
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        #signup {
+
+            display: flex;
+            justify-content: center;
+        }
+
+        #contact-info {
+
+            display: flex;
+            justify-content: center;
+            padding-top: 25px;
+        }
+
+        #pics {
+
+            display: flex;
+            justify-content: space-around;
+        
+        }
+
+        #kimura, #armbar, #triangle {
+
+            max-width: 100%;
+            height: 300px;
+        }
+
+        figcaption {
+
+            font-size: 26px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+
+    <main id="main">
+
+
+        <header id="header">
+            <nav 
+            id="nav-bar" 
+            class="topnav">
+                <ul id="nav-items">
+                    <a 
+                    class="nav-link" 
+                    href="#header">Top</a>
+                    <a 
+                    class="nav-link" 
+                    href="#about-us">About Us</a>
+                    <a 
+                    class="nav-link" 
+                    href="#email">Sign Up</a>
+                    
+                </ul>
+            </nav>
+            <hr>
+ 
+            <h1 style="text-align: center"><em>@shotOfPropayne Brazilian Jiu Jitsu Academy</em></h1>
+        <img 
+        id="header-img" 
+        src="https://ih1.redbubble.net/image.385775437.4942/raf,750x1000,075,t,FFFFFF:97ab1c12de.u1.jpg" 
+        alt="jiu jitsu belt colors">
+        </header>
+
+        
+
+
+        <section id="about-us">
+        <h2 style="text-align: center"><u>About Us</u></h2>
+        <p>Come check out our newest premier Jiu Jitsu school! Located near you! We are a primarily no-gi sister school under the Jon Smith Assoction. Our techniques focus on real-world self-defense scenarios as well as competition. Our school is open to anyone! Whether it's your first time on the mats (or practicing ANY martial art) or you're a seasoned player looking for some sharper competition, we'll take care of you! We can wait to see you on the mats!!!</p>
+        </section>
+
+        <h3 style="text-align: center">Moves you'll learn:</h3>
+        <section id="pics">
+
+            <figure>
+                <img 
+                id="armbar"
+                src="https://media.istockphoto.com/photos/brazilian-jiujitsu-martial-arts-picture-id526325259?s=612x612" 
+                alt="armbar">
+                <figcaption>Armbar</figcaption>
+            </figure>
+
+            <figure>
+                <img 
+                id="kimura"
+                src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Brazilian_Jiu-jitsu_Kimura_lock_from_guard.jpg" 
+                alt="kimura">
+                <figcaption>Kimura</figcaption>
+            </figure>
+            
+            <figure>
+                <img
+                id="traingle" 
+                src="https://us.123rf.com/450wm/miljanzivkovic/miljanzivkovic1908/miljanzivkovic190800041/128712290-brazilian-jiu-jitsu-bjj-training-sparring-fight-triangle-submission.jpg?ver=6" 
+                alt="triangle">
+                <figcaption>Triangle</figcaption>
+            </figure>
+
+            </div>
+            <div id="product-video"> 
+        </section>
+
+        <section id="vid">
+        <iframe 
+        id="video" 
+        src="https://www.youtube.com/embed/rVE7uqmFnIo" 
+        frameborder="2"></iframe>
+        </section>
+
+        <form 
+        id="form" 
+        action="https://www.freecodecamp.com/email-submit">
+        <div id="signup">
+            <div id=enteremail>
+                <label for="email">Enter Email Address to Sign Up:</label>
+                <input 
+                id="email" 
+                type="email" 
+                name="email" 
+                placeholder="Enter your email address here"
+                required>
+            </div>
+            <input 
+            id="submit" 
+            type="submit">
+        </div>
+    </form>
+    </main>
+    <footer>
+        <section id="contact">
+            <h2 id="contact-info">Contact Us:</h2>
+            <p id="contact-info"> Instagram: @shotofpropayne</p>
+        </section>
+    </footer>
+
+</body>
+</html>
